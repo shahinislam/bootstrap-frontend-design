@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="carousel.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="" id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#"><small class="h1 font-weight-bold text-right">Beatnik</small></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto text-uppercase font-weight-bold small">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Brands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nyaka Fashion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Beauty Advice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nyaka Network</a>
+            </li>
+          </ul>
+
+          <div class="form-group has-search my-auto mx-2">
+            <span class="fas fa-search form-control-feedback"></span>
+            <input type="text" class="form-control small shadow-none" placeholder="Search for Products, Brands etc.">
+          </div>
+
+          <div class="">
+            <a href="#" class="text-body small"><i class="fas fa-user fa-1x"></i>Account</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel CoverPhoto Start -->
+    <div id="coverphoto" class="carousel slide mt-3" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#coverphoto" data-slide-to="0" class="active"></li>
+        <li data-target="#coverphoto" data-slide-to="1"></li>
+        <li data-target="#coverphoto" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/computer1.jpg" class="d-block w-100 h-65" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image/computer2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image/computer3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#coverphoto" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#coverphoto" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div>
+  <!-- Carousel CoverPhoto End -->    
+
+  <!-- Search Option Start -->      
+  <div id="search" class="d-flex justify-content-center">
+    <div class="position-relative col-md-6">
+      <div class="position-absolute search-option">
+        <div class="d-flex p-3">
+          <div class="d-flex flex-column text-center">
+            <i class="fa fa-clipboard fa-2x text-warning mb-2"></i>
+            <span>Products</span>
+          </div>
+          <div class="d-flex flex-column mx-5 text-center">
+            <i class="fa fa-user fa-2x text-warning mb-2"></i>
+            <span>Hospital</span>
+          </div>
+          <div class="d-flex flex-column  text-center">
+            <i class="fa fa-search-location fa-2x text-warning mb-2 "></i>
+            <span>Branch</span>
+          </div>
+        </div>
+      </div>
+      <span class="position-absolute search-icon bg-warning"><i class="fa fa-search"></i></span>
+      <input class="need" type="text" placeholder="What do yout need?">
+    </div>
+  </div>
+  <!-- Search Option End -->   
+
+  <!-- Card Option start -->  
+  <div class="row justify-content-md-center mt-5">
+    <div class="card col-md-auto p-2 m-3" style="background-color: rgb(198, 238, 238); color: teal;">
+      <div class="card-body text-center d-flex">
+        <i class="fas fa-calculator fa-3x mr-4"></i>
+        <p class="card-text calculator my-auto">Premium Calculator</p>
+      </div>
+    </div>
+    <div class="card col-md-auto p-2 m-3" style="background-color: rgb(243, 217, 243); color: violet;">
+      <div class="card-body text-center d-flex">
+        <i class="fas fa-clipboard-check fa-3x mr-4"></i>
+        <p class="card-text information my-auto">Policy Information</p>
+      </div>
+    </div>
+    <div class="card col-md-auto p-2 m-3" style="background-color: rgb(230, 217, 217); color: maroon;">
+      <div class="card-body text-center d-flex">
+        <i class="fas fa-credit-card fa-3x mr-4"></i>
+        <p class="card-text transaction my-auto">My Transaction</p>
+      </div>
+    </div>
+  </div>    
+  <!-- Card Option End -->    
+
+  <!-- Our Product Start -->   
+  <div class="">
+    <div class="jumbotron mt-4">
+      <h1 class="display-4 container d-flex">Our Products</p></h1>
+      <p class="lead small container">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      
+      <div class="pt-3 container">
+        <div class="row bg-light" style="border-radius: 10px;">
+          <div class="col-md-3" style="padding: 0 !important;">
+            <div class="nav flex-column card text-center py-5" style="background-color: rgb(32, 32, 109);" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link my-3  text-light active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Savings</a>
+              <a class="nav-link my-3 text-light" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Early Cach</a>
+              <a class="nav-link my-3 text-light" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Children</a>
+              <a class="nav-link my-3 text-light" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Retirement</a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="row"> 
+                  <div class="col-md-6">
+                    <div class="mt-4">
+                      <div class="h2">Sanchay</div>
+                      <div class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi praesentium facere, asperiores ad aspernatur, commodi, delectus fugit veniam laborum voluptatibus accusamus corporis dolorem ex! Quisquam eligendi soluta aliquam vero in.</div>
+                      <div class="text-right mt-3"><span>Details ></span></div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                      <p class="small my-auto">Calculate Premium</p>
+                      <a href="#" class="btn btn-warning btn-sm" style="border-radius: 20px;">Book an appointment</a>
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                      <p class="h3 px-2 pb-1" style="border-radius: 5px; background-color: rgba(236, 236, 236, 0.925);"><i class="fas fa-chevron-left"></i></p>
+                      <p class="h3 px-2 ml-3 pb-1" style="border-radius: 5px; background-color: rgba(236, 236, 236, 0.925);"><i class="fas fa-chevron-right"></i></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6" style="padding: 0 !important;">
+                    <img src="./image/diamond.jpg"  height="374px" style="border-radius: 10px; width: 100%; object-fit: cover;" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Early Cash</div>
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Children</div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Retirement</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a class="btn text-white px-5 mt-5" style="border-radius: 20px; background-color: rgb(32, 32, 109);" href="#" role="button">View all</a>
+        </div>
+      </div>
+    </div>
+  </div>   
+  <!-- Our Product End -->      
+
+  <!-- Bestsellers Carousel Start -->  
+  <div class="mb-5">
+    <div class="h1 mt-5 mb-3 text-center">Bestsellers</div>
+    <div class="text-right font-weight-bold container">View all ></div>
+    <div id="cosmetic" class="carousel slide mt-3" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#cosmetic" data-slide-to="0" class="active"></li>
+        <li data-target="#cosmetic" data-slide-to="1"></li>
+        <li data-target="#cosmetic" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner container pb-3 text-center" >
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-2">
+              <img src="image/cos1.jpg" class="d-block w-100 h-75" alt="">
+              <div class="mt-3">
+                <div class="font-weight-bold">Pixi</div>
+                <div class="">Vitamin-C Serum</div>
+                <div class="font-weight-bold">Rs. 2,550</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="image/cos2.jpg" class="d-block w-100 h-75" alt="">
+              <div class="mt-3">
+                <div class="font-weight-bold">Pixi</div>
+                <div class="">Vitamin-C Serum</div>
+                <div class="font-weight-bold">Rs. 2,550</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="image/cos3.jpg" class="d-block w-100 h-75" alt="">
+              <div class="mt-3">
+                <div class="font-weight-bold">Pixi</div>
+                <div class="">Vitamin-C Serum</div>
+                <div class="font-weight-bold">Rs. 2,550</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="image/cos4.jpg" class="d-block w-100 h-75" alt="">
+              <div class="mt-3">
+                <div class="font-weight-bold">Pixi</div>
+                <div class="">Vitamin-C Serum</div>
+                <div class="font-weight-bold">Rs. 2,550</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="image/cos5.jpg" class="d-block w-100 h-75" alt="">
+              <div class="mt-3">
+                <div class="font-weight-bold">Pixi</div>
+                <div class="">Vitamin-C Serum</div>
+                <div class="font-weight-bold">Rs. 2,550</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="image/cos6.jpg" class="d-block w-100 h-75" alt="">
+              <div class="mt-3">
+                <div class="font-weight-bold">Pixi</div>
+                <div class="">Vitamin-C Serum</div>
+                <div class="font-weight-bold">Rs. 2,550</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-2">
+              <img src="image/cos4.jpg" class="d-block w-100 h-75" alt="">
+              <div class="mt-3">
+                <div class="font-weight-bold">Pixi</div>
+                <div class="">Vitamin-C Serum</div>
+                <div class="font-weight-bold">Rs. 2,550</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="image/cos5.jpg" class="d-block w-100 h-75" alt="">
+              <div class="mt-3">
+                <div class="font-weight-bold">Pixi</div>
+                <div class="">Vitamin-C Serum</div>
+                <div class="font-weight-bold">Rs. 2,550</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="image/cos6.jpg" class="d-block w-100 h-75" alt="">
+              <div class="mt-3">
+                <div class="font-weight-bold">Pixi</div>
+                <div class="">Vitamin-C Serum</div>
+                <div class="font-weight-bold">Rs. 2,550</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="image/cos1.jpg" class="d-block w-100 h-75" alt="">
+              <div class="mt-3">
+                <div class="font-weight-bold">Pixi</div>
+                <div class="">Vitamin-C Serum</div>
+                <div class="font-weight-bold">Rs. 2,550</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="image/cos2.jpg" class="d-block w-100 h-75" alt="">
+              <div class="mt-3">
+                <div class="font-weight-bold">Pixi</div>
+                <div class="">Vitamin-C Serum</div>
+                <div class="font-weight-bold">Rs. 2,550</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="image/cos3.jpg" class="d-block w-100 h-75" alt="">
+              <div class="mt-3">
+                <div class="font-weight-bold">Pixi</div>
+                <div class="">Vitamin-C Serum</div>
+                <div class="font-weight-bold">Rs. 2,550</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#cosmetic" role="button" data-slide="prev">
+        <i class="fas fa-chevron-left fa-2x text-primary"></i>
+      </a>
+      <a class="carousel-control-next" href="#cosmetic" role="button" data-slide="next">
+        <i class="fas fa-chevron-right fa-2x text-primary"></i>
+      </a>
+    </div>
+  </div>    
+  <!-- Bestsellers Carousel End -->   
+
+  <!-- News & Events Blog Start -->  
+  <div class="container">
+    <div class="h1 text-center mb-5">News & <span class="font-weight-bold">Events</span></div>
+    <div class="row justify-content-center">
+      <div class="card shadow mb-3" style="width: 23rem;">
+        <img class="card-img-top" src="image/post1.jpg" height="230px" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text font-weight-normal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card shadow mb-3 mx-3" style="width: 23rem;">
+        <img class="card-img-top" src="image/post2.jpg" height="230px" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text font-weight-normal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card shadow mb-3" style="width: 23rem;">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Recent News</h5>
+          <ul class="list-group list-group-flush" style="margin: 0 !important; padding: 0 !important">
+            <li class="list-group-item">
+              <div class="d-flex">
+                <img class="rounded mr-2" src="image/post1.jpg" width="130px" height="50" alt="Card image cap">
+                <p class="card-text font-weight-normal">Some quick example text to build on the card title.</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex">
+                <img class="rounded mr-2" src="image/post2.jpg" width="130px" height="50" alt="Card image cap">
+                <p class="card-text font-weight-normal">Some quick example text to build on the card title.</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex">
+                <img class="rounded mr-2" src="image/post1.jpg" width="130px" height="50" alt="Card image cap">
+                <p class="card-text font-weight-normal">Some quick example text to build on the card title.</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex">
+                <img class="rounded mr-2" src="image/post2.jpg" width="130px" height="50" alt="Card image cap">
+                <p class="card-text font-weight-normal">Some quick example text to build on the card title.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a class="btn btn-primary px-5 mt-5" style="border-radius: 20px;" href="#" role="button">View all</a>
+    </div>
+  </div>    
+  <!-- News & Events Blog End -->    
+
+  <!-- Daily Essentials Carousel Start -->      
+  <div class="container h5 font-weight-bold mt-5 text-left text-uppercase">Daily Essentials</div>
+  <div id="shop" class="carousel slide mt-3" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#shop" data-slide-to="0" class="active"></li>
+      <li data-target="#shop" data-slide-to="1"></li>
+      <li data-target="#shop" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner container text-center" >
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-2">
+            <img src="image/cos1.jpg" class="d-block w-100 h-75" alt="">
+            <div class="">
+              <div class="carousel-caption bg-white text-dark rounded-circle">
+                <div class="font-weight-bold mx-1">Vitamin-C Serum</div>
+                <div class="font-weight-bold small mt-2">Shop Now ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="image/cos2.jpg" class="d-block w-100 h-75" alt="">
+            <div class="carousel-caption d-md-block bg-white text-dark rounded-circle">
+              <div class="font-weight-bold mx-1">Vitamin-C Serum</div>
+              <div class="font-weight-bold small mt-2">Shop Now ></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="image/cos3.jpg" class="d-block w-100 h-75" alt="">
+            <div class="carousel-caption d-md-block bg-white text-dark rounded-circle">
+              <div class="font-weight-bold mx-1">Vitamin-C Serum</div>
+              <div class="font-weight-bold small mt-2">Shop Now ></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="image/cos4.jpg" class="d-block w-100 h-75" alt="">
+            <div class="carousel-caption d-md-block bg-white text-dark rounded-circle">
+              <div class="font-weight-bold mx-1">Vitamin-C Serum</div>
+              <div class="font-weight-bold small mt-2">Shop Now ></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="image/cos5.jpg" class="d-block w-100 h-75" alt="">
+            <div class="carousel-caption d-md-block bg-white text-dark rounded-circle">
+              <div class="font-weight-bold mx-1">Vitamin-C Serum</div>
+              <div class="font-weight-bold small mt-2">Shop Now ></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="image/cos6.jpg" class="d-block w-100 h-75" alt="">
+            <div class="carousel-caption d-md-block bg-white text-dark rounded-circle">
+              <div class="font-weight-bold mx-1">Vitamin-C Serum</div>
+              <div class="font-weight-bold small mt-2">Shop Now ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#shop" role="button" data-slide="prev">
+      <i class="fas fa-chevron-left fa-2x text-info"></i>
+    </a>
+    <a class="carousel-control-next" href="#shop" role="button" data-slide="next">
+      <i class="fas fa-chevron-right fa-2x text-info"></i>
+    </a>
+  </div>            
+  <!-- Daily Essentials Carousel End -->      
+  
+  <!-- Diaries Carousel Start -->      
+  <div class="">
+    <div class="h2 mt-5 mb-3 text-center font-weight-bold">#Diaries</div>
+    <div id="diary" class="carousel slide mt-3" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#diary" data-slide-to="0" class="active"></li>
+        <li data-target="#diary" data-slide-to="1"></li>
+        <li data-target="#diary" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner container text-left">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-4">
+              <img src="image/diary1.jpg" class="d-block w-100 h-75" alt="...">
+              <div class="mt-1">
+                <div class="font-weight-bold">7 Cosmetic</div>
+                <div class="small">That'll make him..</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <img src="image/diary2.jpg" class="d-block w-100 h-75" alt="...">
+              <div class="mt-1">
+                <div class="font-weight-bold">7 Fragrance</div>
+                <div class="small">That will drive him..</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <img src="image/diary3.jpg" class="d-block w-100 h-75" alt="...">
+              <div class="mt-1">
+                <div class="font-weight-bold">Huda Beauty</div>
+                <div class="small">The biggest beauty launch of the season</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#diary" role="button" data-slide="prev">
+        <i class="fas fa-chevron-left fa-2x text-primary"></i>
+      </a>
+      <a class="carousel-control-next" href="#diary" role="button" data-slide="next">
+        <i class="fas fa-chevron-right fa-2x text-primary"></i>
+      </a>
+    </div>
+  </div>
+  <!-- Diaries Carousel End -->   
+
+  <!-- Footer Contact Start -->      
+  <div class="mt-3 bg-secondary">
+    <div class="container">
+      <div class="row p-4">
+        <div class="col-md-4 mb-3">
+          <div class="d-flex text-white mb-3">
+            <i class="fa fa-envelope my-auto mr-2"></i>
+            <div class="text-uppercase small font-weight-bold">Get special discount in your inbox</div>
+          </div>
+          <div class="d-flex">
+            <input type="text" class="form-control mr-2 shadow-none" placeholder="Enter Your Email Id">
+            <button class="btn btn-outline-light">SEND</button>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 ">
+          <div class="d-flex text-white mb-3">
+            <i class="fa fa-mobile-alt my-auto mr-2"></i>
+            <div class="text-uppercase small font-weight-bold">Experience the nykaa mobile app</div>
+          </div>
+          <div class="d-flex" >
+            <img class="mx-2" width="100px" height="35px" src="image/googleplay.png" alt="">
+            <img class="mx-2" width="100px" height="35px" src="image/appstore.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="d-flex text-white">
+            <i class="fa fa-phone my-auto mr-2"></i>
+            <div class="text-uppercase small font-weight-bold">For any help you may call us at</div>
+          </div>
+          <div class="d-block text-white">
+            <div class="">+8801111-434-4330</div>
+            <div class="pt-3">(Monday to Saturday, 9AM - 9PM)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Contact End -->      
+  
+  <!-- Footer Brand Start -->      
+  <div class="container">
+    <div class="row justify-content-center p-5">
+      <div class="col-md-3 d-flex mb-3">
+        <div class="mr-2">
+          <div class="bg-danger rounded-circle p-2">
+            <i class="fas fa-certificate fa-2x text-white"></i>
+          </div>
+        </div>
+        <div class="">
+          <div class="font-weight-bold text-uppercase">1500 + Brands</div>
+          <div class="small mt-2">Well Curated + Products</div>
+        </div>
+      </div>
+      <div class="col-md-3 d-flex mb-3">
+        <div class="mr-2">
+          <div class="bg-danger rounded-circle p-2">
+            <i class="fas fa-shipping-fast fa-2x text-white"></i>
+          </div>
+        </div>
+        <div class="">
+          <div class="font-weight-bold text-uppercase">Free shipping</div>
+          <div class="small mt-2">For Orders Above INR 1000</div>
+        </div>
+      </div>
+      <div class="col-md-3 d-flex mb-3">
+        <div class="mr-2">
+          <div class="bg-danger rounded-circle p-2">
+            <i class="fas fa-shopping-basket fa-2x text-white"></i>
+          </div>
+        </div>
+        <div class="">
+          <div class="font-weight-bold text-uppercase">Genuine Products</div>
+          <div class="small mt-2">Sourced Directly From Brands</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="font-weight-bold">
+          Show us <i class="fas fa-heart text-danger"></i> on social media
+        </div>
+        <div class="d-flex justify-content-start mt-2">
+          <i class="fab fa-facebook mx-2"></i> 
+          <i class="fab fa-twitter mx-2"></i>
+          <i class="fab fa-instagram mx-2"></i>
+          <i class="fab fa-youtube mx-2"></i>
+          <i class="fab fa-pinterest mx-2"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Brand End -->      
+  
+  <!-- Footer Map Start -->      
+  <div class="bg-dark text-center" style="border-radius: 50px 50px 0 0;">
+    <div class="">
+      <button class="btn btn-warning btn-lg"><i class="fas fa-chevron-up"></i> Back to top</button>
+    </div>
+    <div class="h1 text-white">Store Locator</div>
+    <div class="">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1wTM3wQ450aosbryPz7ZuTjtf2n0QdBu6" 
+        width="600" height="300" style="border-radius: 50px;"></iframe>
+    </div>
+    <hr style="width: 600px; border: 1px solid grey;">
+    <div class="text-secondary small pb-3">Copyright <i class="fas fa-copyright"></i>2020 all rights reserved by Beatnik Technology</div>
+  </div>
+  <!-- Footer Map End -->      
+    
+</body>
+</html>
